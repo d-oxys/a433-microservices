@@ -51,6 +51,6 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t ghcr.io/${{ github.repository }}/karsajobs-backend:${{ github.sha }} .
-          docker push ghcr.io/${{ github.repository }}/karsajobs-backend:${{ github.sha }}
+          docker build -t ghcr.io/${{ github.repository }}/karsajobs:${{ github.sha }} .
+          docker push ghcr.io/${{ github.repository }}/karsajobs:${{ github.sha }}
         # Membuild Docker image dan mem-push-nya ke GitHub Container Registry.
